@@ -15,7 +15,7 @@ jobs:
       - 
         uses: actions/setup-node@v2
         with: 
-          node-version: "18"
+          node-version: "20"
       - 
         name: "Install newman"
         run: "npm install -g newman"
@@ -27,7 +27,7 @@ jobs:
         run: "newman run ContactList.collection.json -e ContactList.environment.json -r htmlextra --reporter-htmlextra-export htmlreport.html --reporter-htmlextra-darkTheme  > runreport1.html"
         # Add new step to commit and push runreport1.html
       - name: Push test report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-report
           path: runreport1.html
