@@ -20,7 +20,7 @@ This project showcases an automated testing suite for a Contacts API, demonstrat
 ## Project Structure:
 
 - `collection`: containing individual test cases for each API functionality.
-- `environment`: Environment file storing the Contacts API URL.
+- `environment`: Environment file is a set of one or more variables that you can reference when sending requests, writing pre-request scripts, or writing post-response scripts. .
 - `.github/workflows/test.yml`: Workflow file defining the CI/CD pipeline for automated testing.
 
 ![Screenshot 2024-05-06 022841](https://github.com/mHassanein96/ContactsAPI-Testing-EndToEnd-CI-CD/assets/133708970/484c466a-a801-4b55-8204-77b3dcf4437e)
